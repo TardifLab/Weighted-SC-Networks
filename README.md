@@ -1,12 +1,13 @@
 
 # Characterizing Weighted Structural Brain Networks #
-#### by Mark Cameron Nelson ####
+<div align="center">**by Mark Cameron Nelson**</div>  
+  
 This library of code can be used to   
 * preprocess multi-modal MRI data,   
 * compute a range of weighted connectomes and   
 * run simple analyses summarized with pretty pictures.  
 
-### +_+_+   Important links   +_+_+ ###
+### +++   Important links   +++ ###
 [Article Preprint]()  
 [Article Publication]()  
 [Data Download](https://portal.conp.ca/dataset?id=projects/mica-mics)  
@@ -25,13 +26,14 @@ https://doi.org/10.1016/j.neuroimage.2022.119612
 This section can be used to preprocess raw structural and diffusion MRI data to estimate whole brain structural connectivity networks.  
 It is composed primarily of a set of shell wrappers that interface with processing tools from `micapipe`
   
-Note: The entire `micapipe` library is included, however   
+Note: The entire `micapipe` library is included, however!   
+  
 **only the functions included in the processing order below were actually used i.e. debugged**.  
   
 In particular, `01_proc-struc_freesurfer.sh`, `02_proc-rsfmri.sh` & `03_FC.py` were not run, but will be necessary for structure-function investigations.  
 
 
-####  *.*.*  IMPORTANT!!  *.*.*  ####  
+####  +++  IMPORTANT!!  +++  ####  
 The version of `micapipe` included here was derived from a beta version. The current code on the `micapipe` GitHub has undergone many changes in syntax since.  
   
 **DO NOT ATTEMPT TO PULL THAT REPO OR USE CODE FROM IT DIRECTLY.**  
@@ -42,7 +44,7 @@ Any desired code from that repo will need to be modified manually to conform wit
 ### Dependencies ###
 See `scripts_custom/init.sh`  
 
-| *Software* |    *Version*  | *Link* |
+| *Software* |    *Version*  | *Links* |
 |------------|---------------|--------------|  
 | dcm2niix   | v1.0.20190902 | https://github.com/rordenlab/dcm2niix |
 | Freesurfer | 6.0.0         | https://surfer.nmr.mgh.harvard.edu/ |
@@ -103,17 +105,17 @@ See `MAINSCRIPT.m` for a simple template.
 
 ### Dependencies ###
 
-|    *Software*     |   *Version*   | *Link* |
-|-------------------|---------------|----------------|  
-| BCT               | 2019-03-03    | https://www.nitrc.org/projects/bct |
-| BrainNetViewer    | 1.7           | https://www.nitrc.org/projects/bnv/ |
-| BrainSpace        | 0.1.1         | https://github.com/MICA-MNI/BrainSpace |
-| ENIGMA            | 2.0.3         | https://github.com/MICA-MNI/ENIGMA
-| gifti-master      | 2.0           | https://www.nitrc.org/projects/gifti/ |
-| linspecer         | 1.4.0.0       | https://www.mathworks.com/matlabcentral/fileexchange/42673-beautiful-and-distinguishable-line-colors-colormap |
-| suplabel          | 1.5.0.0       | https://www.mathworks.com/matlabcentral/fileexchange/7772-suplabel?s_tid=srchtitle |
-| Violinplot-Matlab | -             | https://github.com/bastibe/Violinplot-Matlab |
-| xmltree-main      | 2.1           | https://github.com/gllmflndn/xmltree |
+|    *Software*     |      *Version*      | *Links* |
+|-------------------|---------------------|----------------|  
+| BCT               | 2019.03.03          | https://www.nitrc.org/projects/bct |
+| BrainNetViewer    | 1.7                 | https://www.nitrc.org/projects/bnv/ |
+| BrainSpace        | 0.1.1               | https://github.com/MICA-MNI/BrainSpace |
+| ENIGMA            | 2.0.3               | https://github.com/MICA-MNI/ENIGMA
+| gifti-master      | 2.0                 | https://www.nitrc.org/projects/gifti/ |
+| linspecer         | 1.4.0.0             | https://www.mathworks.com/matlabcentral/fileexchange/42673-beautiful-and-distinguishable-line-colors-colormap |
+| suplabel          | 1.5.0.0             | https://www.mathworks.com/matlabcentral/fileexchange/7772-suplabel?s_tid=srchtitle |
+| Violinplot-Matlab | -                   | https://github.com/bastibe/Violinplot-Matlab |
+| xmltree-main      | 2.1                 | https://github.com/gllmflndn/xmltree |
   
   
 
