@@ -1,18 +1,23 @@
 
 # Characterizing Weighted Structural Brain Networks #
-This library of code can be used to preprocess multi-modal MRI data, compute a range of weighted connectomes and run simple analyses.  
+#### by Mark Cameron Nelson ####
+This library of code can be used to   
+* preprocess multi-modal MRI data,   
+* compute a range of weighted connectomes and   
+* run simple analyses summarized with pretty pictures.  
 
-#### Important links ####
+### +_+_+   Important links   +_+_+ ###
 [Article Preprint]()  
 [Article Publication]()  
 [Data Download](https://portal.conp.ca/dataset?id=projects/mica-mics)  
 [micapipe.readthedocs.io](http://micapipe.readthedocs.io/en/latest/)  
   
 
-#### How to cite this work ####
+### How to cite this work ###
 INSERT REFERENCE TO PAPER HERE  
   
-Cruces, R. R., et al. (2022). Micapipe: A pipeline for multimodal neuroimaging and connectome analysis. *NeuroImage*, https://doi.org/10.1016/j.neuroimage.2022.119612  
+Cruces, R. R., et al. (2022). Micapipe: A pipeline for multimodal neuroimaging and connectome analysis. *NeuroImage*  
+https://doi.org/10.1016/j.neuroimage.2022.119612  
   
   
 
@@ -20,11 +25,13 @@ Cruces, R. R., et al. (2022). Micapipe: A pipeline for multimodal neuroimaging a
 This section can be used to preprocess raw structural and diffusion MRI data to estimate whole brain structural connectivity networks.  
 It is composed primarily of a set of shell wrappers that interface with processing tools from `micapipe`
   
-Note: The entire `micapipe` library is included, however **only the functions included in the processing order below were actually used i.e. debugged**.  
+Note: The entire `micapipe` library is included, however   
+**only the functions included in the processing order below were actually used i.e. debugged**.  
+  
 In particular, `01_proc-struc_freesurfer.sh`, `02_proc-rsfmri.sh` & `03_FC.py` were not run, but will be necessary for structure-function investigations.  
 
 
-##### IMPORTANT #####  
+####  *.*.*  IMPORTANT!!  *.*.*  ####  
 The version of `micapipe` included here was derived from a beta version. The current code on the `micapipe` GitHub has undergone many changes in syntax since.  
   
 **DO NOT ATTEMPT TO PULL THAT REPO OR USE CODE FROM IT DIRECTLY.**  
@@ -35,7 +42,7 @@ Any desired code from that repo will need to be modified manually to conform wit
 ### Dependencies ###
 See `scripts_custom/init.sh`  
 
-| *Software* |    *Version*  | *Further info* |
+| *Software* |    *Version*  | *Link* |
 |------------|---------------|--------------|  
 | dcm2niix   | v1.0.20190902 | https://github.com/rordenlab/dcm2niix |
 | Freesurfer | 6.0.0         | https://surfer.nmr.mgh.harvard.edu/ |
@@ -51,27 +58,44 @@ See `scripts_custom/init.sh`
 
 ### Order of operations ###
 Processing scripts should be run in this order.  
-
-  1. `scripts_custom/01_qbatch_subcall.sh`                            (Used to run jobs on the BIC cluster, adapt to your needs)  
-  2. `scripts_custom/02_micapipe_call.sh`                             (Used to call specific micapipe modules)  
+  
+  1. `scripts_custom/01_qbatch_subcall.sh`  
+     - Used to run jobs on the BIC cluster, adapt to your needs  
+  
+  2. `scripts_custom/02_micapipe_call.sh`  
+     - Used to call specific micapipe modules  
+  
   3. `micapipe/functions/01_proc-struc_volumetric.sh`  
-  4. `scripts_custom/seg4DConvert.sh`                                 (Workaround for segmentation failure in 01_proc-struc_volumetric.sh)  
+  
+  4. `scripts_custom/seg4DConvert.sh`  
+     - Workaround for segmentation failure in 01_proc-struc_volumetric.sh  
+  
   5. `micapipe/functions/02_post-structural.sh`  
+  
   6. `micapipe/functions/02_proc-dwi.sh`  
+  
   7. `scripts_custom/03_run_noddi.sh`  
+  
   8. `micapipe/functions/03_SC.sh`  
+  
   9. `scripts_custom/04_run_commit0.sh`  
+  
   10. `scripts_custom/04_run_commit1.sh --> 04_run_commit2.py`  
+  
   11. `scripts_custom/05_connectomes.sh`  
   
 
-##### Additional comments #####
-1. `scripts_custom/init.sh` must be modified to reflect your path stucture (micapipe/functions/init.sh was not used)  
+#### Additional comments ####
+1. `scripts_custom/init.sh` must be modified to reflect your path stucture  
+   - micapipe/functions/init.sh was not used  
+  
 2. `micapipe/functions/utilities.sh` must be modified to reflect your file naming conventions, especially for raw data  
+  
 
 
 ## Step 2: analysis ##
 This section can be used to perform simple post-processing operations on connectomes incl. filtering, segmenting, etc and to make some pretty plots.  
+  
 It is entirely based in **Matlab** and was written using the R2016a release.  
   
 See `MAINSCRIPT.m` for a simple template.
@@ -79,7 +103,7 @@ See `MAINSCRIPT.m` for a simple template.
 
 ### Dependencies ###
 
-|    *Software*     |   *Version*   | *Further info* |
+|    *Software*     |   *Version*   | *Link* |
 |-------------------|---------------|----------------|  
 | BCT               | 2019-03-03    | https://www.nitrc.org/projects/bct |
 | BrainNetViewer    | 1.7           | https://www.nitrc.org/projects/bnv/ |
