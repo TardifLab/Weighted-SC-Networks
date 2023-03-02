@@ -1,6 +1,6 @@
 
-# Characterizing Weighted Structural Brain Networks #
-<div align="center">**by Mark Cameron Nelson**</div>  
+# <div align="center">Characterizing Weighted Structural Brain Networks</div> #
+**<div align="center">by Mark Cameron Nelson</div>**  
   
 This library of code can be used to   
 * preprocess multi-modal MRI data,   
