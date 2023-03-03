@@ -6,13 +6,8 @@ This library of code can be used to
 * preprocess multi-modal MRI data,   
 * compute a range of weighted connectomes and   
 * run simple analyses summarized with pretty pictures.  
-
-### +++   Important links   +++ ###
-[Article Preprint]()  
-[Article Publication]()  
-[Data Download](https://portal.conp.ca/dataset?id=projects/mica-mics)  
-[micapipe.readthedocs.io](http://micapipe.readthedocs.io/en/latest/)  
   
+  But first...
 
 ### How to cite this work ###
 Nelson, Mark C., et al. (2023). The Human Brain Connectome Weighted by the Myelin Content and Total Intra-Axonal Cross-Sectional Area of White Matter Tracts. *bioRxiv*  
@@ -21,7 +16,17 @@ https://www.biorxiv.org/content/10.1101/2023.03.01.530710v1
 Cruces, Raul R., et al. (2022). Micapipe: A pipeline for multimodal neuroimaging and connectome analysis. *NeuroImage*  
 https://doi.org/10.1016/j.neuroimage.2022.119612  
   
+
+#### Want to download the data I used? ####
   
+[MICs dataset can be found here](https://portal.conp.ca/dataset?id=projects/mica-mics)  
+  
+
+#### Need some help using `micapipe`? ####
+[micapipe.readthedocs.io](http://micapipe.readthedocs.io/en/latest/)  
+  
+  
+  Ok let's get started!
 
 ## Step 1: data processing ##
 This section can be used to preprocess raw structural and diffusion MRI data to estimate whole brain structural connectivity networks.  
