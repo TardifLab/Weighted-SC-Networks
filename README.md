@@ -16,6 +16,9 @@ https://www.biorxiv.org/content/10.1101/2023.03.01.530710v1
 Cruces, Raul R., et al. (2022). Micapipe: A pipeline for multimodal neuroimaging and connectome analysis. *NeuroImage*  
 https://doi.org/10.1016/j.neuroimage.2022.119612  
   
+Royer, Jessica, et al. (2022). An Open MRI Dataset For Multiscale Neuroscience. *Scientific Data*  
+https://www.nature.com/articles/s41597-022-01682-y  
+  
 
 #### Want to download the data I used? ####
   
