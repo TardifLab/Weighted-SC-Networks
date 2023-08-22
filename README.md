@@ -20,17 +20,17 @@ Royer, Jessica, et al. (2022). An Open MRI Dataset For Multiscale Neuroscience. 
 https://www.nature.com/articles/s41597-022-01682-y  
   
 
-#### Want to download the raw data I used? ####
+#### + Want to download the raw data I used? ####
   
-[MICs dataset can be found here](https://portal.conp.ca/dataset?id=projects/mica-mics)  
-  
-
-#### Prefer to just jump right in with my connectomes? ####
-This can be found in the `derivatives` folder  
+&nbsp;&nbsp; [MICs dataset can be found here](https://portal.conp.ca/dataset?id=projects/mica-mics)  
   
 
-#### Need some help using `micapipe`? ####
-[micapipe.readthedocs.io](http://micapipe.readthedocs.io/en/latest/)  
+#### + Prefer to just jump right in with my connectomes? ####
+&nbsp;&nbsp; These can be found in the `derivatives` folder  
+  
+
+#### + Need some help using `micapipe`? ####
+&nbsp;&nbsp; [micapipe.readthedocs.io](http://micapipe.readthedocs.io/en/latest/)  
   
   
   Ok let's get started!
