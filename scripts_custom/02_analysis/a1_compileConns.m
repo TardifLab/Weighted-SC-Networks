@@ -1,7 +1,7 @@
 function a1_compileConns(varargin)
 %
-%  Compiles connectome files (.txt) into cell array and saves as .mat for
-%  easier use.
+%  Example function for compiling your own connectome files (.txt) into a 
+%  cell array and saving as a .mat file.
 %
 % Notes: 
 %   1. Directory structure and Filenames must follow expected pattern (or code must be adjusted accordingly)
