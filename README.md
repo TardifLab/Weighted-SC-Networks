@@ -7,7 +7,7 @@ This library of code can be used to
 * compute a range of weighted connectomes and   
 * run simple analyses summarized with pretty pictures.  
   
-  But first...
+  But first, know before you start...
 
 ### How to cite this work ###
 Nelson, Mark C., et al. (2023). The Human Brain Connectome Weighted by the Myelin Content and Total Intra-Axonal Cross-Sectional Area of White Matter Tracts. *bioRxiv*  
@@ -20,9 +20,13 @@ Royer, Jessica, et al. (2022). An Open MRI Dataset For Multiscale Neuroscience. 
 https://www.nature.com/articles/s41597-022-01682-y  
   
 
-#### Want to download the data I used? ####
+#### Want to download the raw data I used? ####
   
 [MICs dataset can be found here](https://portal.conp.ca/dataset?id=projects/mica-mics)  
+  
+
+#### Prefer to just jump right in with my connectomes? ####
+This can be found in the `derivatives` folder  
   
 
 #### Need some help using `micapipe`? ####
@@ -37,7 +41,7 @@ It is composed primarily of a set of shell wrappers that interface with processi
   
 Note: The entire `micapipe` library is included, however!   
   
-**only the functions included in the processing order below were actually used i.e. debugged**.  
+**only the functions included in the processing order below were actually used i.e. some debugging may be necessary for the others**.  
   
 In particular, `01_proc-struc_freesurfer.sh`, `02_proc-rsfmri.sh` & `03_FC.py` were not run, but will be necessary for structure-function investigations.  
 
@@ -105,7 +109,7 @@ Processing scripts should be run in this order.
 
 
 ## Step 2: analysis ##
-This section can be used to perform simple post-processing operations on connectomes incl. filtering, segmenting, etc and to make some pretty plots.  
+This section can be used to perform simple post-processing operations on connectomes including filtering, segmenting, etc and to make some pretty plots.  
   
 It is entirely based in **Matlab** and was written using the R2016a release.  
   
