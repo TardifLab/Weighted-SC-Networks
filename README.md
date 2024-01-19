@@ -39,7 +39,7 @@ https://www.nature.com/articles/s41597-022-01682-y
 This section can be used to preprocess raw structural and diffusion MRI data to estimate whole brain structural connectivity networks.  
 It is composed primarily of a set of shell wrappers that interface with processing tools from `micapipe`
   
-Note: The entire `micapipe` library is included, however!   
+Note: The entire `micapipe` library is included, HOWEVER!!!   
   
 **only the functions included in the processing order below were actually used i.e. some debugging may be necessary for the others**.  
   
@@ -75,7 +75,7 @@ See `scripts_custom/init.sh`
 Processing scripts should be run in this order.  
   
   1. `scripts_custom/01_qbatch_subcall.sh`  
-     - Used to run jobs on the BIC cluster, adapt to your needs  
+     - Used to run jobs on remote cluster, adapt to your needs  
   
   2. `scripts_custom/02_micapipe_call.sh`  
      - Used to call specific micapipe modules  
@@ -83,7 +83,7 @@ Processing scripts should be run in this order.
   3. `micapipe/functions/01_proc-struc_volumetric.sh`  
   
   4. `scripts_custom/seg4DConvert.sh`  
-     - Workaround for segmentation failure in 01_proc-struc_volumetric.sh  
+     - Workaround for occasional segmentation failure in 01_proc-struc_volumetric.sh  
   
   5. `micapipe/functions/02_post-structural.sh`  
   
@@ -111,7 +111,7 @@ Processing scripts should be run in this order.
 ## Step 2: analysis ##
 This section can be used to perform simple post-processing operations on connectomes including filtering, segmenting, etc and to make some pretty plots.  
   
-It is entirely based in **Matlab** and was written using the R2016a release.  
+It is entirely based in **Matlab** and was written using the R2016a release (although it has been tested in R2022a).  
   
 See `MAINSCRIPT.m` for a simple template.
   
