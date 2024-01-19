@@ -10,8 +10,8 @@ This library of code can be used to
   But first, know before you start...
 
 ### How to cite this work ###
-Nelson, Mark C., et al. (2023). The Human Brain Connectome Weighted by the Myelin Content and Total Intra-Axonal Cross-Sectional Area of White Matter Tracts. *bioRxiv*  
-https://www.biorxiv.org/content/10.1101/2023.03.01.530710v1  
+Nelson, Mark C., et al. (2023). The Human Brain Connectome Weighted by the Myelin Content and Total Intra-Axonal Cross-Sectional Area of White Matter Tracts. *Network Neuroscience*  
+https://doi.org/10.1162/netn_a_00330  
   
 Cruces, Raul R., et al. (2022). Micapipe: A pipeline for multimodal neuroimaging and connectome analysis. *NeuroImage*  
 https://doi.org/10.1016/j.neuroimage.2022.119612  
